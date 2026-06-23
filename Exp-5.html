@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Salary Management System</title>
+  <link rel="stylesheet" href="Exp-5.css">
+</head>
+<body>
+  <h1>Employee Records</h1>
+
+  <form id="employeeForm">
+    <label for="name">Employee Name</label>
+    <input type="text" id="name" required>
+
+    <label for="id">Employee ID</label>
+    <input type="text" id="id" required>
+
+    <label for="salary">Salary</label>
+    <input type="number" id="salary" required>
+
+    <label for="dept">Department</label>
+    <input type="text" id="dept" required>
+
+    <button type="button" onclick="addEmployee()">Add Employee</button>
+  </form>
+
+  <button onclick="displayEmployees()">Display All</button>
+  <button onclick="filterEmployees()">Salary > 50,000</button>
+  <button onclick="showStatistics()">Total & Average Salary</button>
+  <button onclick="countDepartment('IT')">Count IT Employees</button>
+
+  <div id="output"></div>
+  <script src="/js/Exp-5.jsx"></script>
+</body>
+</html>
